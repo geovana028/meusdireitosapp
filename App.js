@@ -26,7 +26,7 @@ export default function App() {
           tabBarShowLabel: false,
 
           headerStyle: {
-            backgroundColor: '#071f36',
+            backgroundColor: '#111c2b',
             elevation: 0,
             shadowOpacity: 0,
             borderBottomWidth: 0,
@@ -92,11 +92,25 @@ export default function App() {
         <Tab.Screen
           name="BottomTabs2"
           component={BottomTabs2}
+          options={{
+            title: 'Artigos e Garantias',
+            headerStyle: {
+              backgroundColor: '#111c2b',
+              elevation: 0,
+              shadowOpacity: 0,
+              borderBottomWidth: 0,
+            },
+            headerTintColor: '#ffffff',
+            headerTitleAlign: 'center',
+          }}
         />
 
         <Tab.Screen
           name="BottomTabs3"
           component={BottomTabs3}
+          options={{
+            headerShown: false
+          }}
         />
 
       </Tab.Navigator>

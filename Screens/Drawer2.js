@@ -46,7 +46,7 @@ export default function Drawer2() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.tituloHeader}>Conceitos Fundamentais</Text>
 
-      {/* CARD 1: CLÁUSULAS PÉTREAS */}
+    
       <View style={styles.card}>
         <View style={styles.cardHeader}>
           <FontAwesome name="shield" size={28} color="#007AFF" />
@@ -78,7 +78,7 @@ export default function Drawer2() {
         </View>
       </View>
 
-      {/* CARD 2: VEDAÇÃO AO RETROCESSO SOCIAL */}
+     
       <View style={styles.card}>
         <View style={styles.cardHeader}>
           <FontAwesome name="line-chart" size={26} color="#007AFF" />

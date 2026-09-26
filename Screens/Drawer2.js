@@ -23,13 +23,13 @@ export default function Drawer2() {
     const opcoesDeVoz = {
       language: 'pt-BR',
       rate: 0.9,
-      pitch: 1.1, // Um tom levemente mais agudo garante entonação feminina caso o sistema use a voz padrão
+      pitch: 1.1, 
       onDone: () => setCardLendo(null),
       onStopped: () => setCardLendo(null),
       onError: () => setCardLendo(null),
     };
 
-    // Se encontrou uma voz feminina específica no aparelho, define o identificador dela
+    
     if (vozFeminina) {
       opcoesDeVoz.voice = vozFeminina;
     }

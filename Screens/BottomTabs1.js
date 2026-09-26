@@ -40,7 +40,7 @@ export default function BottomTabs1() {
     <Drawer.Navigator 
       initialRouteName="Home"
       screenOptions={{
-        // 1. COR DA BARRA SUPERIOR
+        
         headerStyle: {
           backgroundColor: '#111c2b',
           elevation: 0,
@@ -52,13 +52,13 @@ export default function BottomTabs1() {
           backgroundColor: '#111c2b',
         },
 
-        // ⬇️ 2. COR DO MENU LATERAL QUE ESTAVA BRANCO ⬇️
+       
         drawerStyle: {
-          backgroundColor: '#111c2b', // Fundo azul escuro do painel do menu
+          backgroundColor: '#111c2b', 
         },
-        drawerActiveBackgroundColor: '#0f1b27', // Fundo do item selecionado ("Meus Direitos")
-        drawerActiveTintColor: '#60a5fa',        // Texto do item selecionado
-        drawerInactiveTintColor: '#ffffff',      // Texto dos itens não selecionados
+        drawerActiveBackgroundColor: '#0f1b27', 
+        drawerActiveTintColor: '#60a5fa',     
+        drawerInactiveTintColor: '#ffffff',      
       }}
     >
       <Drawer.Screen

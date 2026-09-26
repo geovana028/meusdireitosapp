@@ -16,12 +16,11 @@ export default function BottomTabs3() {
         <Text style={styles.nome}>Geovana Barbosa</Text>
         <Text style={styles.subtitulo}>Desenvolvedora do App</Text>
 
-        {/* Informações de Matrícula e Disciplina */}
         <View style={styles.infoContainer}>
           <Text style={styles.rotuloInfo}>DISCIPLINA</Text>
           <Text style={styles.textoInfo}>Desenvolvimento de Aplicativos</Text>
 
-          <Text style={styles.rotuloInfo}>MATRÍCULA / RA</Text>
+          <Text style={styles.rotuloInfo}>MATRÍCULA</Text>
           <Text style={styles.textoInfo}>20241BG.INF_I0028</Text> 
         </View>
 

@@ -12,7 +12,7 @@ const DIREITOS = [
 
 export default function BottomTabs2() {
   const renderItem = ({ item }) => (
-    // Substituído TouchableOpacity por View para ser apenas um Card estático
+
     <View style={styles.card}>
       <FontAwesome name="balance-scale" size={32} color="#007AFF" style={styles.icone} />
       <Text style={styles.textoCodigo}>Cód: {item.id}</Text>
@@ -37,26 +37,24 @@ export default function BottomTabs2() {
 }
 
 const styles = StyleSheet.create({
-  // 1. FUNDO DA TELA INTEIRA
+
   containerTela: {
     flex: 1,
     backgroundColor: '#111c2b',
   },
 
-  // 2. COR DA FLATLIST
   flatListStyle: {
     flex: 1,
     backgroundColor: '#111c2b',
   },
 
-  // 3. CONTEÚDO DA LISTA
   containerLista: {
     padding: 20,
     alignItems: 'center',
     backgroundColor: '#111c2b',
   },
 
-  // 4. CARD ESTÁTICO
+  
   card: {
     backgroundColor: '#0f1b27', // Cor de fundo do card
     borderRadius: 16,

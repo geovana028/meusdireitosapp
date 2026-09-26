@@ -23,7 +23,7 @@ export default function App() {
 
         screenOptions={({ route }) => ({
 
-          // BARRA SUPERIOR (HEADER)
+
           headerStyle: {
             backgroundColor: '#071f36',
             elevation: 0,
@@ -32,7 +32,6 @@ export default function App() {
           },
           headerTintColor: '#ffffff',
 
-          // BARRA INFERIOR (TAB BAR)
           tabBarStyle: {
             backgroundColor: '#111c2b',
             borderTopColor: '#111c2b',
@@ -42,7 +41,7 @@ export default function App() {
 
             if (route.name === 'BottomTabs1') {
 
-              // Ícone da Balança do Direito
+            o
               return (
                 <MaterialCommunityIcons
                   name={focused ? 'scale-balance' : 'scale-balance'}
@@ -53,7 +52,7 @@ export default function App() {
 
             } else if (route.name === 'BottomTabs2') {
 
-              // Ícone do Escudo de Proteção (igual ao do card)
+    
               return (
                 <Ionicons
                   name={focused ? 'shield' : 'shield-outline'}
@@ -64,7 +63,6 @@ export default function App() {
 
             } else if (route.name === 'BottomTabs3') {
 
-              // Ícone Padrão de Boneco/Pessoa
               return (
                 <Ionicons
                   name={focused ? 'person' : 'person-outline'}
@@ -97,8 +95,8 @@ export default function App() {
           name="BottomTabs2"
           component={BottomTabs2}
           options={{
-            title: '', // Removeu o título 'Lista'
-            tabBarLabel: () => null // Remove o rótulo de texto abaixo do ícone
+            title: '', 
+            tabBarLabel: () => null 
           }}
         />
 

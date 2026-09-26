@@ -74,7 +74,7 @@ function FlipCard({ item }) {
   return (
     <TouchableOpacity activeOpacity={0.9} onPress={virarCard} style={styles.cardWrapper}>
       <View>
-        {/* Frente do card */}
+       
         <Animated.View style={[styles.card, { transform: [{ rotateY: frenteRoda }] }]}>
           <FontAwesome name="balance-scale" size={50} color="#007AFF" style={styles.icone} />
           <Text style={styles.categoria}>{item.categoria}</Text>
@@ -85,7 +85,6 @@ function FlipCard({ item }) {
           </View>
         </Animated.View>
 
-        {/* Verso do card */}
         <Animated.View style={[styles.card, styles.cardTras, { transform: [{ rotateY: trasRoda }] }]}>
           <FontAwesome name="gavel" size={40} color="#007AFF" style={styles.icone} />
           <Text style={styles.textoResposta}>{item.resposta}</Text>
@@ -146,7 +145,7 @@ const styles = StyleSheet.create({
   card: {
     width: 280,
     height: 380,
-    backgroundColor: '#0f1b27', // Cor interna do card igual à lista anterior
+    backgroundColor: '#0f1b27',
     borderRadius: 20,
     padding: 22,
     alignItems: 'center',

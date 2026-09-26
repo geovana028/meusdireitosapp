@@ -23,6 +23,7 @@ export default function App() {
 
         screenOptions={({ route }) => ({
 
+          tabBarShowLabel: false,
 
           headerStyle: {
             backgroundColor: '#071f36',
@@ -41,10 +42,9 @@ export default function App() {
 
             if (route.name === 'BottomTabs1') {
 
-            o
               return (
                 <MaterialCommunityIcons
-                  name={focused ? 'scale-balance' : 'scale-balance'}
+                  name={'scale-balance'}
                   size={size + 2}
                   color={color}
                 />
@@ -52,7 +52,6 @@ export default function App() {
 
             } else if (route.name === 'BottomTabs2') {
 
-    
               return (
                 <Ionicons
                   name={focused ? 'shield' : 'shield-outline'}
@@ -86,7 +85,6 @@ export default function App() {
           name="BottomTabs1"
           component={BottomTabs1}
           options={{
-            title: '',
             headerShown: false
           }}
         />
@@ -94,18 +92,11 @@ export default function App() {
         <Tab.Screen
           name="BottomTabs2"
           component={BottomTabs2}
-          options={{
-            title: '', 
-            tabBarLabel: () => null 
-          }}
         />
 
         <Tab.Screen
           name="BottomTabs3"
           component={BottomTabs3}
-          options={{
-            title: '',
-          }}
         />
 
       </Tab.Navigator>

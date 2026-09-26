@@ -16,12 +16,19 @@ export default function BottomTabs3() {
         <Text style={styles.nome}>Geovana Barbosa</Text>
         <Text style={styles.subtitulo}>Desenvolvedora do App</Text>
 
-        {/* A linha da barra divisor foi removida daqui */}
+        {/* Informações de Matrícula e Disciplina */}
+        <View style={styles.infoContainer}>
+          <Text style={styles.rotuloInfo}>DISCIPLINA</Text>
+          <Text style={styles.textoInfo}>Desenvolvimento de Aplicativos</Text>
+
+          <Text style={styles.rotuloInfo}>MATRÍCULA / RA</Text>
+          <Text style={styles.textoInfo}>20241BG.INF_I0028</Text> 
+        </View>
 
         <Text style={styles.rotuloObjetivo}>OBJETIVO DO APLICATIVO</Text>
 
         <Text style={styles.descricaoObjetivo}>
-      Informar a população que seus direitos fundamentais são protegidos pela Constituição Federal e imunes a cancelamentos arbitrários de qualquer governo ou candidato.
+          Informar a população que seus direitos fundamentais são protegidos pela Constituição Federal e imunes a cancelamentos arbitrários.
         </Text>
       </View>
     </ScrollView>
@@ -66,7 +73,7 @@ const styles = StyleSheet.create({
     height: '100%',
     transform: [
       { translateX: 0 },
-      { translateY: 5  },
+      { translateY: 5 },
       { scale: 1.1 }
     ],
   },
@@ -81,7 +88,31 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#b0b3b8',
     textAlign: 'center',
-    marginBottom: 25, // Aumentado para dar um espaçamento natural sem precisar da linha
+    marginBottom: 20,
+  },
+  infoContainer: {
+    width: '100%',
+    backgroundColor: '#071f36',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 20,
+    alignItems: 'center',
+  },
+  rotuloInfo: {
+    fontSize: 11,
+    fontWeight: 'bold',
+    color: '#007AFF',
+    letterSpacing: 1,
+    marginTop: 4,
+    marginBottom: 2,
+    textAlign: 'center',
+  },
+  textoInfo: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#ffffff',
+    textAlign: 'center',
+    marginBottom: 6,
   },
   rotuloObjetivo: {
     fontSize: 12,
@@ -92,9 +123,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   descricaoObjetivo: {
-    fontSize: 15,
+    fontSize: 14,
     color: '#e4e6eb',
     textAlign: 'center',
-    lineHeight: 22,
+    lineHeight: 20,
   },
 });
